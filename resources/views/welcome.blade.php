@@ -37,7 +37,7 @@
                     <label for="keywords">Keywords:</label>
                     <input type="text" class="form-control keywords" id="keywords">
                 </div>
-                <div class="form-group col-xs-3" style="margin-top: 25px">
+                <div class="form-group col-xs-3" style="margin-top: 25px; margin-bottom: 25px">
                     <button type="button" class="btn btn-primary search-user">Search</button>
                 </div>
 
@@ -113,7 +113,9 @@
 
                })
 
-           }
+           }else(
+               $( ".form-inline" ).append('<p class="no-result" style="text-align:center; font-size: 22px; color: red;">At least one of the fields must be filled</p>')
+           )
 
 
 
